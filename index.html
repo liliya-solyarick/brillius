@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brillius</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script>
+		function initMap() {
+  		var myLatLng = {lat: 38.890366, lng: -77.031955};
+
+  		var map = new google.maps.Map(document.getElementById('map'), {
+    	zoom: 10,
+    	center: myLatLng
+  		});
+
+  		var marker = new google.maps.Marker({
+    	position: myLatLng,
+    	map: map,
+    	title: 'Hello World!'
+  		});
+		}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"
+ 		async defer>
+ 	</script>
+	<header id="header">
+		<div class="container">
+			<div class="row header-row">
+				<div class="col-sm-12 col-md-2">
+					<strong class="logo"><a href="">Brillius</a></strong>
+				</div>
+				<div class="col-sm-12 col-md-10">
+					<nav id="main-nav">
+						<ul class="nav nav-pills">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#shortcodes">Shortcodes</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+	<section class="promo" id="home">
+		<div class="container">
+			<header class="heading">
+				<h2>Creative Minds at Work</h2>
+				<div>
+				<strong class="title">We're a team of developers who are passionate about our work</strong>
+				</div>
+			</header>
+			<div class="content">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel"> 
+						  	<div class="carousel-inner">
+							    <div class="active item">
+							      <img class="img-responsive" src="images/slide01.png" alt="...">
+							    </div>
+							    <div class="item">
+							      <img class="img-responsive" src="images/slide02.png" alt="...">
+							    </div>
+							    <div class="item">
+							      <img class="img-responsive" src="images/slide03.png" alt="...">
+							    </div>
+							</div>
+							<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							   <span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="carousel-control right" href="#myCarousel" data-slide="next">
+							   <span class="glyphicon glyphicon-chevron-right"></span>
+							</a> 
+						</div>
+					</div> 
+				</div> 
+			</div> 
+		</div>
+	</section>
+	<section class="skills" id="about">
+    	<div class="container">
+   	 		<header class="heading decor">
+   		 		<h2>Our Amazing Skills</h2>
+   		 		<div class="section-title">
+   					<strong class="title">Here is what we love and do best</strong>
+   		 		</div>
+   	 		</header>
+   	 		<div class="content">
+	   		 	<div class="row indicator-img">
+	   		 		<div class="col-md-3 col-sm-6 indicator">
+						<img class="img-responsive" src="images/img01.png" alt="">
+					</div>
+					<div class="col-md-3 col-sm-6 indicator">
+						<img class="img-responsive" src="images/img02.png" alt="">
+					</div>
+					<div class="col-md-3 col-sm-6 indicator">
+						<img class="img-responsive" src="images/img03.png" alt="">
+					</div>
+					<div class="col-md-3 col-sm-6 indicator">
+						<img class="img-responsive" src="images/img04.png" alt="">
+					</div> 
+	   		 	</div>
+   		 		 <div class="testimonials">
+   		 			<span>Testimonials</span>
+   		 			<div class="row">
+   		 				<div class="col-md-6">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. consequat ipsum nec orci scelerisque 
+								</p>
+								<cite>Joe Doe, Company CEO</cite>
+							</blockquote>
+						</div>
+						<div class="col-md-6">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. consequat ipsum nec orci scelerisque 
+								</p>
+								<cite>Doe Joe, Company CEO</cite>
+							</blockquote>
+						</div>
+   		 			</div>
+   		 		</div> 
+   	 		</div> 
+    	</div>
+	</section>
+	<section class="staff" id="team">
+	    <div class="container">
+		   	<header class="heading decor">
+		   		<h2>Our Awesome Staff</h2>
+		   		<div class="wrapper-title">
+		   		<strong class="title">Meet Our Peeps</strong>
+		   		</div>
+		   	</header>
+		   	<div class="content team">
+		   		<div class="row staff-row">
+		   			<div class="col-md-3 col-sm-6 staff-block">
+		   				<div class="image_circle">
+		   					<img class="img-responsive" src="images/img05.jpg" alt="">
+		   				</div>
+		   				<div class="text-holder">
+		   					<div class="staff-decor">
+		   						<h4 >Amazing Sara</h4>
+		   					</div>
+		   					<div class="staff-text">
+				   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.<br> 
+				   				Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								Integeregestas lectus sed ligula sagittis a lacinia turpis suscipit.</p>
+							</div>
+						</div>
+						<ul class="social">
+  							<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-facebook"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-google-plus"></a></li>
+  						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 staff-block">
+						<div class="image_circle">
+							<img class="img-responsive" src="images/img06.jpg" alt="">
+						</div>
+						<div class="text-holder">
+		   					<div class="staff-decor">
+		   						<h4 >Mike the Coder</h4>
+		   					</div>
+		   					<div class="staff-text">
+				   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.<br> 
+				   				Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								Integeregestas lectus sed ligula sagittis a lacinia turpis suscipit.</p>
+							</div>
+						</div>
+						<ul class="social">
+  							<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-facebook"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-google-plus"></a></li>
+  						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 staff-block">
+						<div class="image_circle">
+							<img class="img-responsive" src="images/img07.jpg" alt="">
+						</div>
+						<div class="text-holder">
+		   					<div class="staff-decor">
+		   						<h4>Creative Amy</h4>
+		   					</div>
+		   					<div class="staff-text">
+				   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.<br> 
+				   				Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								Integeregestas lectus sed ligula sagittis a lacinia turpis suscipit.</p>
+							</div>
+						</div>
+						<ul class="social">
+  							<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-facebook"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-google-plus"></a></li>
+  						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 staff-block">
+						<div class="image_circle">
+							<img class="img-responsive" src="images/img08.jpg" alt="">
+						</div>
+						<div class="text-holder">
+		   					<div class="staff-decor">
+		   						<h4>Jim the Designer</h4>
+		   					</div>
+		   					<div class="staff-text">
+				   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.<br> 
+				   				Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								Integeregestas lectus sed ligula sagittis a lacinia turpis suscipit.</p>
+							</div>
+						</div>
+						<ul class="social">
+  							<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-facebook"></a></li>
+  							<li><a href="#" aria-hidden="true" class="icon-google-plus"></a></li>
+  						</ul>
+					</div> 
+		   		</div>
+		   	</div>
+	    </div>
+	</section>
+	<section class="works" id="portfolio">
+	    <div class="container">
+		   	<header class="heading">
+		   		<h2>Our best works</h2>
+		   		<strong class="title">More than 10 years expirience and something else</strong>
+		   	</header>
+		   	<div class="row nav-row">
+		   		<div class="col-md-12">
+				   	<div class="tabs">
+					  	<ul class="nav nav-tabs navigate" role="tablist">
+						    <li role="presentation">
+						    	<a class="links-naw" href="#webdesign" aria-controls="webdesign" role="tab" data-toggle="tab">Web Design</a>
+						    </li>
+						    <li role="presentation" class="active">
+						    	<a class="links-naw" href="#gdesign" aria-controls="gdesign" role="tab" data-toggle="tab">Graphic Design</a>
+						    </li>
+						    <li role="presentation">
+						    	<a class="links-naw" href="#print" aria-controls="print" role="tab" data-toggle="tab">Print</a>
+						    </li>
+						    <li role="presentation">
+						    	<a class="links-naw" href="#branding" aria-controls="branding" role="tab" data-toggle="tab">Branding</a>
+						    </li>
+						    <li role="presentation">
+						    	<a class="links-naw" href="#motion" aria-controls="motion" role="tab" data-toggle="tab">Motion Graphic</a>
+						    </li>
+					 	</ul>
+					  	<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane" id="webdesign">
+						    	<div class="content">
+								   	<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img09.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img10.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img11.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img12.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						    <div role="tabpanel" class="tab-pane active" id="gdesign">
+						    	<div class="content">
+								   	<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img09.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img10.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img11.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img12.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img13.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img14.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img15.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img16.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img17.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img18.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img19.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img20.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img21.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img22.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img23.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img24.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="print">
+								<div class="content">
+								   	<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img09.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img10.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img11.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img12.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img13.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img14.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img15.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img16.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					    	<div role="tabpanel" class="tab-pane" id="branding">
+					    		<div class="content">
+								   	<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img09.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img10.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img11.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img12.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+					    	</div>
+					    	<div role="tabpanel" class="tab-pane" id="motion">
+					    		<div class="content">
+								   	<div class="row works-row">
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img09.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img10.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img11.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6">
+											<div class="image_circle">
+												<img class="img-responsive" src="images/img12.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+					    	</div>
+					  	</div>
+					</div>   	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blog" id="blog">
+	    <div class="container">
+		   	<header class="heading">
+		   		<h2>Blog</h2>
+		   		<strong class="title">Stay updated on what we do
+				</strong>
+		   	</header>
+		   	<div class="content">
+		   		<div class="row">
+		   			<div class="col-md-9">
+				   		<div class="media blog-media">
+		  					<div class="media-left">
+		  						<div class="image_circle">
+			    					<a href="#">
+			      					<img class="img-responsive media-object blog-img" src="images/img25.jpg" alt="">
+			    					</a>
+		    				</div>
+		  					</div>
+		  					<div class="media-body media-text">
+		  						<div class="media-heading">
+		    						<h4>Latest post from the blog</h4>
+		    					</div>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.<a href="#">Read more >></a></p>
+		  					</div>
+						</div>
+						<div class="media blog-media">
+		  					<div class="media-left">
+		  						<div class="image_circle">
+			    					<a href="#">
+			      					<img class="img-responsive media-object blog-img" src="images/img26.jpg" alt="">
+			    					</a>
+		    					</div>
+		  					</div>
+		  					<div class="media-body media-text">
+		  						<div class="media-heading">
+		    						<h4>Another post</h4>
+		    					</div>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.<a href="#">Read more >></a></p>
+		  					</div>
+						</div>
+						<div class="media blog-media">
+		  					<div class="media-left">
+		  						<div class="image_circle">
+			    					<a href="#">
+			      					<img class="img-responsive media-object blog-img" src="images/img27.jpg" alt="">
+			    					</a>
+		    					</div>
+		  					</div>
+		  					<div class="media-body media-text">
+		  						<div class="media-heading">
+		    						<h4>Another post</h4>
+		    					</div>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.<a href="#">Read more >></a></p>
+		  					</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<aside id="sidebar">
+							<div class="row">
+								<div class="col-md-12">
+									<form>
+										<div class="categories search"><span class="side-block">Search</span>
+										</div>
+										<input type="text" placeholder="Type here ..."/>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="categories categories-title">
+										<span class="side-block">Categories</span>
+									</div>
+									<ul class="categories-list">
+										<li>Our News</li>
+										<li>Related projects</li>
+										<li>Happy Holidays</li>
+										<li>Freebie</li>
+										<li>In the News</li>
+										<li>Some Category</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="categories tweets">
+										<span class="side-block">Latest Tweets</span>
+									</div>
+									<p class="tweet">
+										Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit. In ac
+										dapibus dui. 
+										<a href="#">http://t.co/3qxiAwcf via @someuser</a>
+									</p>
+									<p class="tweet">
+										Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit. In ac
+										dapibus dui. <a href="#">http://t.co/3qxiAwcf via @someuser</a>
+									</p>
+									<p class="tweet">
+										Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit. In ac
+										dapibus dui. <a href="#">http://t.co/3qxiAwcf via @someuser</a>
+									</p>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>	
+		   	</div>
+	    </div>
+	</section>
+	<section class="shortcodes" id="shortcodes">
+	    <div class="container">
+		   	<header class="heading">
+		   		<h2>Shortcodes</h2>
+		   		<strong class="title">We've included commonly used web elements. Enjoy!</strong>
+		   	</header>
+		   	<div class="content">
+		   		<div class="media-heading">
+		   			<h4>Columns</h4>
+		   		</div>
+		   		<div class="columns">
+			   		<div class="row row-codes">
+			   			<div class="col-md-6 col-small">
+			   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In consequat ipsum nec orci scelerisque id suscipit eros rhoncus. Mauris commodo tincidunt nunc tempor varius. Cras tincidunt odio ac tellus molestie sit amet sodales nunc suscipit. Aliquam turpis nisi, consequat quis rutrum in, viverra ac turpis.<br>
+							Suspendisse volutpat viverra elit.  Nam aliquet elit ut erat commodo egestas. 
+							Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In 
+			   			</div>
+			   			<div class="col-md-6">
+			   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In consequat ipsum nec orci scelerisque id suscipit eros rhoncus. Mauris commodo tincidunt nunc tempor varius. Cras tincidunt odio ac tellus molestie sit amet sodales nunc suscipit. Aliquam turpis nisi, consequat quis rutrum in, viverra ac turpis.<br>
+							Suspendisse volutpat viverra elit.  Nam aliquet elit ut erat commodo egestas. 
+							Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In 
+			   			</div>
+			   		</div>
+			   		<div class="row row-codes">
+			   			<div class="col-md-4 col-small">
+			   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							Vestibulum odio sapien, luctus eget
+							scelerisque quis, imperdiet sit amet urna.
+			   			</div>
+			   			<div class="col-md-4 col-small">
+			   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							Vestibulum odio sapien, luctus eget
+							scelerisque quis, imperdiet sit amet urna.
+			   			</div>
+			   			<div class="col-md-4">
+			   				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							Vestibulum odio sapien, luctus eget
+							scelerisque quis, imperdiet sit amet urna.
+			   			</div>
+			   		</div>
+			   		<div class="row">
+			   			<div class="col-md-3 col-small">
+			   				Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+			   			</div>
+			   			<div class="col-md-3 col-small">
+			   				Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+			   			</div>
+			   			<div class="col-md-3 col-small">
+			   				Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+			   			</div>
+			   			<div class="col-md-3">
+			   				Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+			   			</div>
+			   		</div>
+			   	</div>
+			   	<div class="media-heading">
+		   			<h4>Text elements</h4>
+		   		</div>
+		   		<div class="row">
+		   			<div class="col-md-4">
+		   				<ul class="element-list">
+		   					<li>lorem ipsum dolor sit amet</li>
+		   					<li>consectetur adipiscing elit, curabitur</li>
+		   					<li>nisl bibendum facilisis in eu dolor</li>
+		   					<li>ut erat commodo egestas vestibulum</li>
+		   					<li>luctus eget scelerisque quis, imperdiet</li>
+		   					<li>consequat ipsum nec orci scelerisque</li>
+		   					<li>auris commodo tincidunt nunc tempor varius</li>
+		   				</ul>
+		   			</div>
+		   			<div class="col-md-4">
+		   				<ol class="element-list">
+		   					<li>lorem ipsum dolor sit amet</li>
+		   					<li>consectetur adipiscing elit, curabitur</li>
+		   					<li>nisl bibendum facilisis in eu dolor</li>
+		   					<li>ut erat commodo egestas vestibulum</li>
+		   					<li>luctus eget scelerisque quis, imperdiet</li>
+		   					<li>consequat ipsum nec orci scelerisque</li>
+		   					<li>auris commodo tincidunt nunc tempor varius</li>
+		   				</ol>
+		   			</div>
+		   			<div class="col-md-4">
+		   				<blockquote class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisor.
+		   				</blockquote>
+		   			</div>
+		   		</div>
+		   		<div class="media-heading">
+		   			<h4>Sliding boxes and Tab blocks</h4>
+		   		</div>
+		   		<div class="row">
+		   			<div class="col-md-6">
+			   			<div class="panel-group main-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+						    <div class="panel panel-default">
+						        <div class="panel-heading" role="tab" id="headingOne">
+						        	<h4 class="panel-title">
+						        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          		First accordion item
+						        		</a>
+						      		</h4>
+						    	</div>
+						    	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						      		<div class="panel-body">
+								        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+										Vestibulum odio sapien, luctus eget
+										scelerisque quis, imperdiet sit amet urna.
+						      		</div>
+						    	</div>
+						    </div>
+						    <div class="panel panel-default">
+						    	<div class="panel-heading" role="tab" id="headingTwo">
+						      		<h4 class="panel-title">
+						        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          		Second accordion item
+						        		</a>
+						      		</h4>
+						    	</div>
+						    	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      		<div class="panel-body">
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									Vestibulum odio sapien, luctus eget
+									scelerisque quis, imperdiet sit amet urna.
+						      		</div>
+						    	</div>
+						    </div>
+						    <div class="panel panel-default">
+						    	<div class="panel-heading" role="tab" id="headingThree">
+						      		<h4 class="panel-title">
+						        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          		Third accordion item
+						        		</a>
+						      		</h4>
+						    	</div>
+						    	<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						      		<div class="panel-body">
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									Vestibulum odio sapien, luctus eget
+									scelerisque quis, imperdiet sit amet urna.
+						      		</div>
+						    	</div>
+						    </div>
+						    <div class="panel panel-default">
+						    	<div class="panel-heading" role="tab" id="headingFour">
+						      		<h4 class="panel-title">
+						        		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						          		Fourth accordion item
+						        		</a>
+						      		</h4>
+						    	</div>
+						    	<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						      		<div class="panel-body">
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									Vestibulum odio sapien, luctus eget
+									scelerisque quis, imperdiet sit amet urna.
+						      		</div>
+						    	</div>
+						    </div>
+						</div>
+			   		</div>
+		   			<div class="col-md-6">
+		   				<div>
+							<div class="nav-left">
+							    <ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab1</a></li>
+								    <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab2</a></li>
+								    <li role="presentation"><a href="#another" aria-controls="another" role="tab" data-toggle="tab">Another tab</a></li>
+							  	</ul>
+                                <div class="tab-content">
+					                <div role="tabpanel" class="tab-pane active" id="tab1">
+					    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+										<p>Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+					    			</div>
+					    			<div role="tabpanel" class="tab-pane" id="tab2">
+					    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+					    			</div>
+					    			<div role="tabpanel" class="tab-pane" id="another">
+					    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+					    			</div>
+					  			</div>
+							</div>
+						</div>	
+		   			</div>
+		   		</div>
+			   	<div class="media-heading">
+			   		<div class="info">
+			   			<h4>Info boxes and buttons</h4>
+			   		</div>
+			   	</div>
+			   	<div class="row">
+			   		<div class="col-md-6">
+			   			<div class="info-box">
+			   				<h5>Heading goes here</h5>
+			   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+			   			</div>
+			   		</div>
+			   		<div class="col-md-6">
+			   			<div class="info-box">
+			   				<h5>Heading goes here</h5>
+			   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+			   			</div>
+			   		</div>
+			   	</div>
+			   	<div class="row button-row">
+			   		<div class="col-md-12">
+			   			<button type="button" class="btn btn-default btn-sm">Button</button>
+			   			<button type="button" class="btn btn-default btn-lg">Large button</button>
+			   			<button type="button" class="btn btn-default btn-lg btn-exlg">Extra large button</button>
+			   		</div>
+			   	</div>
+			   	<div class="media-heading">
+			   		<h4 class="boxes">Boxes</h4>
+			   	</div>
+			   	<div class="row icon">
+			   		<div class="col-md-6 boxes-col">
+			   			<div class="info-box">
+			   				<div class="row">
+			   					<div class="col-md-2">
+			   						<div class="icon-ok">
+	  									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+									</div>
+			   					</div>
+			   					<div class="col-md-10 text-icon">
+			   						<div class="text-holder">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									</div>
+								</div>
+							</div>
+			   			</div>
+			   		</div>	
+			   		<div class="col-md-6 boxes-col">
+			   			<div class="info-box">
+			   				<div class="row">
+			   					<div class="col-md-2">
+			   						<div class="icon-ok">
+	  									<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 
+									</div>
+			   					</div>
+			   					<div class="col-md-10 text-icon">
+			   						<div class="text-holder">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									</div>
+								</div>
+			   				</div>
+			   			</div>	
+			   		</div>
+			   	</div>
+			   	<div class="row icon">
+			   		<div class="col-md-6 boxes-col">
+			   			<div class="info-box">
+				   			<div class="row">
+				   				<div class="col-md-2">
+				   					<div class="icon-ok">
+		  								<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+									</div>
+				   				</div>
+				   				<div class="col-md-10 text-icon">
+				   					<div class="text-holder">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									</div>
+								</div>
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="col-md-6 boxes-col">
+			   			<div class="info-box">
+			   				<div class="row">
+			   					<div class="col-md-2">
+			   						<div class="icon-ok">
+	  									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									</div>
+			   					</div>
+			   					<div class="col-md-10 text-icon">
+			   						<div class="text-holder">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+									</div>
+								</div>
+			   				</div>
+			   			</div>	
+		   			</div>
+		   		</div>
+		   	</div>
+	    </div>
+	</section>
+	<section class="contact" id="contact">
+	    <div class="container">
+		   	<header class="heading">
+		   		<h2>Contact Us</h2>
+		   		<strong class="title">We are aways open to your questions and comments</strong>
+		   	</header>
+		   	<div class="content">
+		   		<div class="row contact-row">
+		   			<div class="col-md-7">
+		   				<div id="map"></div>
+		   			</div>
+		   			<div class="col-md-5 drop">
+		   				<div class="media-heading">
+		   					<h4 class="boxes">Drop us a line</h4>
+		   				</div>
+		   				<form class="contact-form">
+		   					<fieldset>
+		   						<input type="text" placeholder="Name...">
+		   						<input type="email" placeholder="Email..." required>
+		   						<textarea class="contact-area" placeholder="Message..."></textarea>
+		   						<input id ="button1" type="submit" value="Submit">
+							</fieldset>
+		   				</form>
+		   			</div>
+		   		</div>
+		   		<div class="heading-contact">
+		   		<div class="media-heading heading-info col-md-7">
+		   					<h4 class="contact-info">Contact info</h4>
+		   				</div>
+		   		</div>
+		   		<div class="row contact-text">
+		   			<div class="col-md-7 col-sm-7">
+		   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+						<p>Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.</p>
+						<p>Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		   			</div>
+		   			<div class="col-md-5 col-sm-5">
+		   				<div class="media-heading">
+		   					<h4 class="boxes">Social Networks</h4>
+		   				</div>
+		   				<ul class="social-row">
+		   					<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-facebook"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-google-plus"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-flickr"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-dribble"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-linkedin"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-pinterest"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-skype"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-behance"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-yahoo"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-amazon"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-vimeo"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-tumblr"></a></li>
+		   					<li><a href="#" aria-hidden="true" class="icon-github"></a></li>
+		   				</ul>
+		   			</div>
+		   		</div>
+		   	</div>
+	    </div>
+	</section>
+	<footer id="footer">
+		<div class="container">
+			<div class="row row-footer"> 
+				<div class="col-sm-12 col-md-12">
+					<nav id="footer-nav">
+						<ul class="nav nav-pills">
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Team</a></li>
+							<li><a href="">Portfolio</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Shortcodes</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+					<strong class="logo-footer"><a href="">Brillius</a></strong>
+			</div>
+		</div> 
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>
